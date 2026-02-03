@@ -193,23 +193,15 @@
             width: 64px;
             height: 64px;
             border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
             flex-shrink: 0;
+            overflow: hidden;
         }
 
-        .app-icon.realpay { background: linear-gradient(135deg, #10b981, #059669); }
-        .app-icon.promisetime { background: linear-gradient(135deg, #f472b6, #ec4899); }
-        .app-icon.singanyojeong { background: linear-gradient(135deg, #818cf8, #6366f1); }
-        .app-icon.wolse { background: linear-gradient(135deg, #60a5fa, #3b82f6); }
-        .app-icon.jeonse { background: linear-gradient(135deg, #34d399, #10b981); }
-        .app-icon.plip { background: linear-gradient(135deg, #4ade80, #22c55e); }
-        .app-icon.petmoney { background: linear-gradient(135deg, #fbbf24, #f59e0b); }
-        .app-icon.sullae { background: linear-gradient(135deg, #f87171, #ef4444); }
-        .app-icon.dreamflow { background: linear-gradient(135deg, #a78bfa, #8b5cf6); }
-        .app-icon.mission100 { background: linear-gradient(135deg, #fb923c, #f97316); }
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
         .app-info h3 {
             font-size: 1.25rem;
@@ -392,11 +384,14 @@
             width: 80px;
             height: 80px;
             border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.5rem;
             flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .modal-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .modal-title h2 {
@@ -685,7 +680,7 @@
             <div class="apps-grid">
                 <article class="app-card" onclick="openModal('realpay')">
                     <div class="app-header">
-                        <div class="app-icon realpay">💰</div>
+                        <div class="app-icon"><img src="icons/realpay.png" alt="RealPay"></div>
                         <div class="app-info">
                             <h3>RealPay 시급지킴이</h3>
                             <span class="tagline">실시간 시급 계산기</span>
@@ -701,7 +696,7 @@
 
                 <article class="app-card" onclick="openModal('promisetime')">
                     <div class="app-header">
-                        <div class="app-icon promisetime">⏰</div>
+                        <div class="app-icon"><img src="icons/promisetime.jpg" alt="약속시간"></div>
                         <div class="app-info">
                             <h3>약속시간</h3>
                             <span class="tagline">모임 시간 관리</span>
@@ -717,7 +712,7 @@
 
                 <article class="app-card" onclick="openModal('singanyojeong')">
                     <div class="app-header">
-                        <div class="app-icon singanyojeong">📚</div>
+                        <div class="app-icon"><img src="icons/singanyojeong.png" alt="신간요정"></div>
                         <div class="app-info">
                             <h3>신간요정</h3>
                             <span class="tagline">신간 도서 알림</span>
@@ -739,7 +734,7 @@
             <div class="apps-grid">
                 <article class="app-card" onclick="openModal('wolse')">
                     <div class="app-header">
-                        <div class="app-icon wolse">🏘️</div>
+                        <div class="app-icon"><img src="icons/wolse.png" alt="월세장부"></div>
                         <div class="app-info">
                             <h3>월세장부</h3>
                             <span class="tagline">집주인을 위한 월세 관리</span>
@@ -755,7 +750,7 @@
 
                 <article class="app-card" onclick="openModal('jeonse')">
                     <div class="app-header">
-                        <div class="app-icon jeonse">📋</div>
+                        <div class="app-icon"><img src="icons/jeonse.png" alt="전세장부"></div>
                         <div class="app-info">
                             <h3>전세장부</h3>
                             <span class="tagline">전세금 및 계약 관리</span>
@@ -777,7 +772,7 @@
             <div class="apps-grid">
                 <article class="app-card" onclick="openModal('plip')">
                     <div class="app-header">
-                        <div class="app-icon plip">🌱</div>
+                        <div class="app-icon"><img src="icons/plip.png" alt="Plip"></div>
                         <div class="app-info">
                             <h3>Plip 플립</h3>
                             <span class="tagline">AI 식물 케어 도우미</span>
@@ -793,7 +788,7 @@
 
                 <article class="app-card" onclick="openModal('petmoney')">
                     <div class="app-header">
-                        <div class="app-icon petmoney">🐾</div>
+                        <div class="app-icon"><img src="icons/petmoney.png" alt="펫머니"></div>
                         <div class="app-info">
                             <h3>펫머니</h3>
                             <span class="tagline">반려동물 지출 추적</span>
@@ -809,7 +804,7 @@
 
                 <article class="app-card" onclick="openModal('sullae')">
                     <div class="app-header">
-                        <div class="app-icon sullae">🍻</div>
+                        <div class="app-icon"><img src="icons/sullae.png" alt="술래"></div>
                         <div class="app-info">
                             <h3>술래</h3>
                             <span class="tagline">술자리 게임 모음</span>
@@ -817,7 +812,7 @@
                     </div>
                     <p class="app-description">모임이 더 즐거워지는 술자리 게임 컬렉션. 진실 게임, 랜덤 벌칙, 폭탄 게임 등.</p>
                     <div class="app-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.reaf.singanyojeong" class="app-link store" target="_blank" onclick="event.stopPropagation()">Play Store</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.reaf.sullae" class="app-link store" target="_blank" onclick="event.stopPropagation()">Play Store</a>
                         <a href="sullae/terms.html" class="app-link legal" onclick="event.stopPropagation()">이용약관</a>
                         <a href="sullae/privacy.html" class="app-link legal" onclick="event.stopPropagation()">개인정보</a>
                     </div>
@@ -831,7 +826,7 @@
             <div class="apps-grid">
                 <article class="app-card" onclick="openModal('dreamflow')">
                     <div class="app-header">
-                        <div class="app-icon dreamflow">🌙</div>
+                        <div class="app-icon"><img src="icons/dreamflow.png" alt="드림플로우"></div>
                         <div class="app-info">
                             <h3>드림플로우</h3>
                             <span class="tagline">AI 루시드 드림 트레이닝</span>
@@ -847,7 +842,7 @@
 
                 <article class="app-card" onclick="openModal('mission100')">
                     <div class="app-header">
-                        <div class="app-icon mission100">💪</div>
+                        <div class="app-icon"><img src="icons/mission100.png" alt="Mission 100"></div>
                         <div class="app-info">
                             <h3>Mission 100</h3>
                             <span class="tagline">100일 운동 챌린지</span>
@@ -908,8 +903,7 @@
         // 앱 데이터
         const appData = {
             realpay: {
-                icon: '💰',
-                iconClass: 'realpay',
+                iconImg: 'icons/realpay.png',
                 title: 'RealPay 시급지킴이',
                 tagline: '실시간 시급 계산기',
                 description: '프리랜서와 알바생을 위한 실시간 시급 계산 앱입니다. 일한 시간을 정확하게 기록하고 급여를 관리하세요. 타이머 기능으로 근무 시간을 실시간 추적하고, 주급/월급 통계까지 한눈에 확인할 수 있습니다.',
@@ -919,8 +913,7 @@
                 privacyUrl: 'realpay/privacy.html'
             },
             promisetime: {
-                icon: '⏰',
-                iconClass: 'promisetime',
+                iconImg: 'icons/promisetime.jpg',
                 title: '약속시간',
                 tagline: '모임 시간 관리',
                 description: '친구들과의 약속 시간을 효율적으로 조율할 수 있는 앱입니다. 투표 기능으로 참석자 모두에게 맞는 시간을 쉽게 찾을 수 있습니다. 일정 알림과 장소 공유 기능도 제공됩니다.',
@@ -930,8 +923,7 @@
                 privacyUrl: 'promise-time/privacy.html'
             },
             singanyojeong: {
-                icon: '📚',
-                iconClass: 'singanyojeong',
+                iconImg: 'icons/singanyojeong.png',
                 title: '신간요정',
                 tagline: '신간 도서 알림',
                 description: '좋아하는 작가나 출판사의 신간이 출간되면 알림을 받을 수 있습니다. 찜 목록으로 읽고 싶은 책을 관리하고, 보유 현황도 체크하세요. 독서 생활이 더 풍요로워집니다.',
@@ -941,8 +933,7 @@
                 privacyUrl: 'singanyojeong/privacy.html'
             },
             wolse: {
-                icon: '🏘️',
-                iconClass: 'wolse',
+                iconImg: 'icons/wolse.png',
                 title: '월세장부',
                 tagline: '집주인을 위한 월세 관리',
                 description: '임대인을 위한 가장 쉬운 월세 관리 앱입니다. 수입/지출 기록, 세입자 관리, 계약 알림까지 모든 것을 한 곳에서 관리하세요. 월별 통계와 리포트로 임대 수익을 체계적으로 파악할 수 있습니다.',
@@ -952,8 +943,7 @@
                 privacyUrl: 'wolse-ledger/privacy.html'
             },
             jeonse: {
-                icon: '📋',
-                iconClass: 'jeonse',
+                iconImg: 'icons/jeonse.png',
                 title: '전세장부',
                 tagline: '전세금 및 계약 관리',
                 description: '전세 계약과 보증금을 체계적으로 관리할 수 있습니다. 계약 만료일 알림과 전세금 반환 기록까지 꼼꼼하게 챙겨드립니다. 여러 물건을 관리하는 분들께 특히 유용합니다.',
@@ -963,8 +953,7 @@
                 privacyUrl: 'jeonse-ledger/privacy.html'
             },
             plip: {
-                icon: '🌱',
-                iconClass: 'plip',
+                iconImg: 'icons/plip.png',
                 title: 'Plip 플립',
                 tagline: 'AI 식물 케어 도우미',
                 description: 'AI가 식물 상태를 분석하고 맞춤형 케어 가이드를 제공합니다. 식물 사진을 찍으면 건강 상태를 진단하고 필요한 관리법을 알려드립니다. 물주기 알림도 자동으로 설정됩니다.',
@@ -974,8 +963,7 @@
                 privacyUrl: 'plip/privacy.html'
             },
             petmoney: {
-                icon: '🐾',
-                iconClass: 'petmoney',
+                iconImg: 'icons/petmoney.png',
                 title: '펫머니',
                 tagline: '반려동물 지출 추적',
                 description: '반려동물에게 들어가는 비용을 한눈에 파악하세요. 사료, 병원비, 용품비, 미용비 등을 카테고리별로 관리하고 월별 통계로 지출 패턴을 분석할 수 있습니다.',
@@ -985,19 +973,17 @@
                 privacyUrl: 'pet-money/privacy.html'
             },
             sullae: {
-                icon: '🍻',
-                iconClass: 'sullae',
+                iconImg: 'icons/sullae.png',
                 title: '술래',
                 tagline: '술자리 게임 모음',
                 description: '모임이 더 즐거워지는 술자리 게임 컬렉션입니다. 진실 게임, 랜덤 벌칙, 폭탄 게임 등 다양한 게임으로 분위기를 띄워보세요. 인원수에 맞는 게임도 추천해드립니다.',
                 screenshots: ['screenshots/sullae/01.jpg', 'screenshots/sullae/02.jpg', 'screenshots/sullae/03.jpg', 'screenshots/sullae/04.jpg'],
-                storeUrl: 'https://play.google.com/store/apps/details?id=com.reaf.singanyojeong',
+                storeUrl: 'https://play.google.com/store/apps/details?id=com.reaf.sullae',
                 termsUrl: 'sullae/terms.html',
                 privacyUrl: 'sullae/privacy.html'
             },
             dreamflow: {
-                icon: '🌙',
-                iconClass: 'dreamflow',
+                iconImg: 'icons/dreamflow.png',
                 title: '드림플로우',
                 tagline: 'AI 루시드 드림 트레이닝',
                 description: '과학적 방법으로 자각몽을 훈련하세요. Lumi AI 코치와 함께하는 14주 프로그램으로 꿈을 조절하는 능력을 키울 수 있습니다. 꿈 일기 기능과 현실 점검 알림도 제공됩니다.',
@@ -1007,8 +993,7 @@
                 privacyUrl: 'dreamflow/privacy.html'
             },
             mission100: {
-                icon: '💪',
-                iconClass: 'mission100',
+                iconImg: 'icons/mission100.png',
                 title: 'Mission 100',
                 tagline: '100일 운동 챌린지',
                 description: '팔굽혀펴기, 스쿼트, 플랭크 등 100일 챌린지 시리즈입니다. 매일 조금씩, 꾸준히 성장하세요. 점진적으로 증가하는 운동량과 성취감으로 동기부여를 유지할 수 있습니다.',
@@ -1030,8 +1015,7 @@
 
             currentApp = appId;
 
-            document.getElementById('modalIcon').className = 'modal-icon ' + app.iconClass;
-            document.getElementById('modalIcon').textContent = app.icon;
+            document.getElementById('modalIcon').innerHTML = '<img src="' + app.iconImg + '" alt="' + app.title + '">';
             document.getElementById('modalTitle').textContent = app.title;
             document.getElementById('modalTagline').textContent = app.tagline;
             document.getElementById('modalDescription').textContent = app.description;
