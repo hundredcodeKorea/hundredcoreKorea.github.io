@@ -215,6 +215,13 @@
             color: var(--text-muted);
         }
 
+        .app-date {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+            opacity: 0.7;
+        }
+
         .app-description {
             color: var(--text-secondary);
             font-size: 0.95rem;
@@ -403,6 +410,20 @@
         .modal-title .tagline {
             color: var(--text-muted);
             font-size: 1rem;
+        }
+
+        .modal-dates {
+            display: flex;
+            gap: 16px;
+            margin-top: 8px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .modal-dates span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
         }
 
         .modal-body {
@@ -878,6 +899,7 @@
                 <div class="modal-title">
                     <h2 id="modalTitle"></h2>
                     <span class="tagline" id="modalTagline"></span>
+                    <div class="modal-dates" id="modalDates"></div>
                 </div>
             </div>
             <div class="modal-body">
@@ -910,7 +932,9 @@
                 screenshots: ['screenshots/realpay/01.png', 'screenshots/realpay/02.png', 'screenshots/realpay/03.png', 'screenshots/realpay/04.png'],
                 storeUrl: 'https://play.google.com/store/apps/details?id=com.reaf.real_pay',
                 termsUrl: 'realpay/terms.html',
-                privacyUrl: 'realpay/privacy.html'
+                privacyUrl: 'realpay/privacy.html',
+                releaseDate: '2026.02.02',
+                lastUpdate: '2026.02.02'
             },
             promisetime: {
                 iconImg: 'icons/promisetime.jpg',
@@ -920,7 +944,9 @@
                 screenshots: ['screenshots/promise-time/01.png', 'screenshots/promise-time/02.png', 'screenshots/promise-time/03.png', 'screenshots/promise-time/04.png'],
                 storeUrl: null,
                 termsUrl: 'promise-time/terms.html',
-                privacyUrl: 'promise-time/privacy.html'
+                privacyUrl: 'promise-time/privacy.html',
+                releaseDate: '2026.01.28',
+                lastUpdate: '2026.01.28'
             },
             singanyojeong: {
                 iconImg: 'icons/singanyojeong.png',
@@ -930,7 +956,9 @@
                 screenshots: ['screenshots/singanyojeong/01.png', 'screenshots/singanyojeong/02.png', 'screenshots/singanyojeong/03.png', 'screenshots/singanyojeong/04.png'],
                 storeUrl: 'https://play.google.com/store/apps/details?id=com.reaf.singanyojeong',
                 termsUrl: 'singanyojeong/terms.html',
-                privacyUrl: 'singanyojeong/privacy.html'
+                privacyUrl: 'singanyojeong/privacy.html',
+                releaseDate: '2026.01.28',
+                lastUpdate: '2026.01.28'
             },
             wolse: {
                 iconImg: 'icons/wolse.png',
@@ -940,7 +968,9 @@
                 screenshots: ['screenshots/wolse/01.jpg', 'screenshots/wolse/02.jpg', 'screenshots/wolse/03.jpg', 'screenshots/wolse/04.jpg'],
                 storeUrl: 'https://play.google.com/store/apps/details?id=com.reaf.wolseledger',
                 termsUrl: 'wolse-ledger/terms.html',
-                privacyUrl: 'wolse-ledger/privacy.html'
+                privacyUrl: 'wolse-ledger/privacy.html',
+                releaseDate: '2026.01.23',
+                lastUpdate: '2026.01.23'
             },
             jeonse: {
                 iconImg: 'icons/jeonse.png',
@@ -950,7 +980,9 @@
                 screenshots: ['screenshots/jeonse/01.png', 'screenshots/jeonse/02.png', 'screenshots/jeonse/03.png', 'screenshots/jeonse/04.png'],
                 storeUrl: 'https://play.google.com/store/apps/details?id=com.reaf.jeonseledger',
                 termsUrl: 'jeonse-ledger/terms.html',
-                privacyUrl: 'jeonse-ledger/privacy.html'
+                privacyUrl: 'jeonse-ledger/privacy.html',
+                releaseDate: '2026.01.11',
+                lastUpdate: '2026.01.11'
             },
             plip: {
                 iconImg: 'icons/plip.png',
@@ -960,7 +992,9 @@
                 screenshots: ['screenshots/plip/01.png', 'screenshots/plip/02.png', 'screenshots/plip/03.png', 'screenshots/plip/04.png'],
                 storeUrl: 'https://play.google.com/store/apps/details?id=com.lyuft.plant_care_app',
                 termsUrl: 'plip/terms.html',
-                privacyUrl: 'plip/privacy.html'
+                privacyUrl: 'plip/privacy.html',
+                releaseDate: '2026.01.28',
+                lastUpdate: '2026.01.28'
             },
             jellypocket: {
                 iconImg: 'icons/jellypocket.png',
@@ -970,7 +1004,9 @@
                 screenshots: ['screenshots/jellypocket/01.png', 'screenshots/jellypocket/02.png', 'screenshots/jellypocket/03.png', 'screenshots/jellypocket/04.png'],
                 storeUrl: null,
                 termsUrl: 'jelly-pocket/terms.html',
-                privacyUrl: 'jelly-pocket/privacy.html'
+                privacyUrl: 'jelly-pocket/privacy.html',
+                releaseDate: '2026.02.04',
+                lastUpdate: '2026.02.04'
             },
             sullae: {
                 iconImg: 'icons/sullae.png',
@@ -980,7 +1016,9 @@
                 screenshots: ['screenshots/sullae/01.jpg', 'screenshots/sullae/02.jpg', 'screenshots/sullae/03.jpg', 'screenshots/sullae/04.jpg'],
                 storeUrl: 'https://play.google.com/store/apps/details?id=com.reaf.sullae',
                 termsUrl: 'sullae/terms.html',
-                privacyUrl: 'sullae/privacy.html'
+                privacyUrl: 'sullae/privacy.html',
+                releaseDate: '2026.01.18',
+                lastUpdate: '2026.01.18'
             },
             dreamflow: {
                 iconImg: 'icons/dreamflow.png',
@@ -990,7 +1028,9 @@
                 screenshots: ['screenshots/dreamflow/01.png', 'screenshots/dreamflow/02.png', 'screenshots/dreamflow/03.png', 'screenshots/dreamflow/04.png'],
                 storeUrl: 'https://play.google.com/store/apps/details?id=com.reaf.dreamflow',
                 termsUrl: 'dreamflow/terms.html',
-                privacyUrl: 'dreamflow/privacy.html'
+                privacyUrl: 'dreamflow/privacy.html',
+                releaseDate: '2026.02.03',
+                lastUpdate: '2026.02.03'
             },
             mission100: {
                 iconImg: 'icons/mission100.png',
@@ -1000,7 +1040,9 @@
                 screenshots: [],
                 storeUrl: null,
                 termsUrl: 'mission100/terms.html',
-                privacyUrl: 'mission100/privacy.html'
+                privacyUrl: 'mission100/privacy.html',
+                releaseDate: '2025.11.04',
+                lastUpdate: '2025.11.04'
             }
         };
 
@@ -1019,6 +1061,16 @@
             document.getElementById('modalTitle').textContent = app.title;
             document.getElementById('modalTagline').textContent = app.tagline;
             document.getElementById('modalDescription').textContent = app.description;
+
+            // 날짜 정보
+            const datesHtml = [];
+            if (app.releaseDate) {
+                datesHtml.push(`<span>📅 출시: ${app.releaseDate}</span>`);
+            }
+            if (app.lastUpdate && app.lastUpdate !== app.releaseDate) {
+                datesHtml.push(`<span>🔄 업데이트: ${app.lastUpdate}</span>`);
+            }
+            document.getElementById('modalDates').innerHTML = datesHtml.join('');
 
             // 스크린샷 갤러리
             const gallery = document.getElementById('screenshotGallery');
