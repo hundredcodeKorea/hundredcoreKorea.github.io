@@ -695,6 +695,62 @@
             <p class="subtitle">당신의 일상을 100% 즐기는 방법<br>삶을 더 편리하고 스마트하게 만드는 앱</p>
         </header>
 
+        <!-- 인기 앱 (Featured) -->
+        <section class="category">
+            <h2 class="category-title"><span>🔥</span> 인기 앱</h2>
+            <div class="apps-grid">
+                <article class="app-card" onclick="openModal('dreamflow')">
+                    <div class="app-header">
+                        <div class="app-icon"><img src="icons/dreamflow.png" alt="드림플로우"></div>
+                        <div class="app-info">
+                            <h3>드림플로우</h3>
+                            <span class="tagline">AI 루시드 드림 트레이닝</span>
+                            <span class="app-date">2026.02.03 출시</span>
+                        </div>
+                    </div>
+                    <p class="app-description">과학적 방법으로 자각몽을 훈련하세요. Lumi AI 코치와 함께하는 14주 프로그램으로 꿈을 조절하는 능력을 키워보세요.</p>
+                    <div class="app-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.reaf.dreamflow" class="app-link store" target="_blank" onclick="event.stopPropagation()">Play Store</a>
+                        <a href="dreamflow/terms.html" class="app-link legal" onclick="event.stopPropagation()">이용약관</a>
+                        <a href="dreamflow/privacy.html" class="app-link legal" onclick="event.stopPropagation()">개인정보</a>
+                    </div>
+                </article>
+
+                <article class="app-card" onclick="openModal('promisetime')">
+                    <div class="app-header">
+                        <div class="app-icon"><img src="icons/promisetime.jpg" alt="약속시간"></div>
+                        <div class="app-info">
+                            <h3>약속시간</h3>
+                            <span class="tagline">가족 약 복용 관리</span>
+                        </div>
+                    </div>
+                    <p class="app-description">부모님 약 드셨는지, 잔소리 없이 확인하세요. 복용 알림과 가족 공유 기능으로 사랑하는 가족의 건강을 함께 챙깁니다.</p>
+                    <div class="app-links">
+                        <a href="#" class="app-link store" target="_blank" onclick="event.stopPropagation()">준비중</a>
+                        <a href="pill-time/terms.html" class="app-link legal" onclick="event.stopPropagation()">이용약관</a>
+                        <a href="pill-time/privacy.html" class="app-link legal" onclick="event.stopPropagation()">개인정보</a>
+                    </div>
+                </article>
+
+                <article class="app-card" onclick="openModal('plip')">
+                    <div class="app-header">
+                        <div class="app-icon"><img src="icons/plip.png" alt="Plip"></div>
+                        <div class="app-info">
+                            <h3>Plip 플립</h3>
+                            <span class="tagline">AI 식물 케어 도우미</span>
+                            <span class="app-date">2026.01.28 출시</span>
+                        </div>
+                    </div>
+                    <p class="app-description">AI가 식물 상태를 분석하고 맞춤형 케어 가이드를 제공합니다. 물주기 알림도 자동으로.</p>
+                    <div class="app-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.lyuft.plant_care_app" class="app-link store" target="_blank" onclick="event.stopPropagation()">Play Store</a>
+                        <a href="plip/terms.html" class="app-link legal" onclick="event.stopPropagation()">이용약관</a>
+                        <a href="plip/privacy.html" class="app-link legal" onclick="event.stopPropagation()">개인정보</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
         <!-- 생산성 -->
         <section class="category">
             <h2 class="category-title"><span>⚡</span> 생산성</h2>
@@ -713,22 +769,6 @@
                         <a href="https://play.google.com/store/apps/details?id=com.reaf.real_pay" class="app-link store" target="_blank" onclick="event.stopPropagation()">Play Store</a>
                         <a href="realpay/terms.html" class="app-link legal" onclick="event.stopPropagation()">이용약관</a>
                         <a href="realpay/privacy.html" class="app-link legal" onclick="event.stopPropagation()">개인정보</a>
-                    </div>
-                </article>
-
-                <article class="app-card" onclick="openModal('promisetime')">
-                    <div class="app-header">
-                        <div class="app-icon"><img src="icons/promisetime.jpg" alt="약속시간"></div>
-                        <div class="app-info">
-                            <h3>약속시간</h3>
-                            <span class="tagline">모임 시간 관리</span>
-                        </div>
-                    </div>
-                    <p class="app-description">친구들과의 약속 시간을 효율적으로 조율하세요. 투표 기능으로 모두에게 맞는 시간을 찾아드립니다.</p>
-                    <div class="app-links">
-                        <a href="#" class="app-link store" target="_blank" onclick="event.stopPropagation()">준비중</a>
-                        <a href="promise-time/terms.html" class="app-link legal" onclick="event.stopPropagation()">이용약관</a>
-                        <a href="promise-time/privacy.html" class="app-link legal" onclick="event.stopPropagation()">개인정보</a>
                     </div>
                 </article>
 
@@ -795,23 +835,6 @@
         <section class="category">
             <h2 class="category-title"><span>🌿</span> 라이프스타일</h2>
             <div class="apps-grid">
-                <article class="app-card" onclick="openModal('plip')">
-                    <div class="app-header">
-                        <div class="app-icon"><img src="icons/plip.png" alt="Plip"></div>
-                        <div class="app-info">
-                            <h3>Plip 플립</h3>
-                            <span class="tagline">AI 식물 케어 도우미</span>
-                            <span class="app-date">2026.01.28 출시</span>
-                        </div>
-                    </div>
-                    <p class="app-description">AI가 식물 상태를 분석하고 맞춤형 케어 가이드를 제공합니다. 물주기 알림도 자동으로.</p>
-                    <div class="app-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.lyuft.plant_care_app" class="app-link store" target="_blank" onclick="event.stopPropagation()">Play Store</a>
-                        <a href="plip/terms.html" class="app-link legal" onclick="event.stopPropagation()">이용약관</a>
-                        <a href="plip/privacy.html" class="app-link legal" onclick="event.stopPropagation()">개인정보</a>
-                    </div>
-                </article>
-
                 <article class="app-card" onclick="openModal('jellypocket')">
                     <div class="app-header">
                         <div class="app-icon"><img src="icons/jellypocket.png" alt="젤리포켓"></div>
@@ -850,23 +873,6 @@
         <section class="category">
             <h2 class="category-title"><span>🎯</span> 자기 계발</h2>
             <div class="apps-grid">
-                <article class="app-card" onclick="openModal('dreamflow')">
-                    <div class="app-header">
-                        <div class="app-icon"><img src="icons/dreamflow.png" alt="드림플로우"></div>
-                        <div class="app-info">
-                            <h3>드림플로우</h3>
-                            <span class="tagline">AI 루시드 드림 트레이닝</span>
-                            <span class="app-date">2026.02.03 출시</span>
-                        </div>
-                    </div>
-                    <p class="app-description">과학적 방법으로 자각몽을 훈련하세요. Lumi AI 코치와 함께하는 14주 프로그램.</p>
-                    <div class="app-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.reaf.dreamflow" class="app-link store" target="_blank" onclick="event.stopPropagation()">Play Store</a>
-                        <a href="dreamflow/terms.html" class="app-link legal" onclick="event.stopPropagation()">이용약관</a>
-                        <a href="dreamflow/privacy.html" class="app-link legal" onclick="event.stopPropagation()">개인정보</a>
-                    </div>
-                </article>
-
                 <article class="app-card" onclick="openModal('mission100')">
                     <div class="app-header">
                         <div class="app-icon"><img src="icons/mission100.png" alt="Mission 100"></div>
@@ -945,12 +951,12 @@
             promisetime: {
                 iconImg: 'icons/promisetime.jpg',
                 title: '약속시간',
-                tagline: '모임 시간 관리',
-                description: '친구들과의 약속 시간을 효율적으로 조율할 수 있는 앱입니다. 투표 기능으로 참석자 모두에게 맞는 시간을 쉽게 찾을 수 있습니다. 일정 알림과 장소 공유 기능도 제공됩니다.',
+                tagline: '가족 약 복용 관리',
+                description: '부모님 약 드셨는지, 잔소리 없이 확인할 수 있는 효도 앱입니다. 복용 알림을 설정하고, 가족 공유 기능으로 부모님의 복용 여부를 실시간으로 확인하세요. 잔소리 대신 따뜻한 관심으로 가족의 건강을 함께 챙깁니다.',
                 screenshots: ['screenshots/promise-time/01.png', 'screenshots/promise-time/02.png', 'screenshots/promise-time/03.png', 'screenshots/promise-time/04.png'],
                 storeUrl: null,
-                termsUrl: 'promise-time/terms.html',
-                privacyUrl: 'promise-time/privacy.html',
+                termsUrl: 'pill-time/terms.html',
+                privacyUrl: 'pill-time/privacy.html',
                 releaseDate: '2026.01.28',
                 lastUpdate: '2026.01.28'
             },
